@@ -11,6 +11,8 @@
 check laravel version
 `php artisan --version`
 
+update node.js to latest (https://nodejs.org/ja/)
+
 # function
 - create user
 - login
