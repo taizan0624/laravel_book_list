@@ -8,6 +8,11 @@
 `% php artisan key:generate`
 `% composer install --ignore-platform-req=ext-fileinfo // when seeing error with above command`<br>
 
+3. Install MySQL to local
+ref. https://prog-8.com/docs/mysql-env-win
+Add C:\Program Files\MySQL\MySQL Server 8.0\bin to environment variable
+
+
 check laravel version
 `php artisan --version`
 
