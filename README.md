@@ -8,6 +8,9 @@
 `% php artisan key:generate`
 `% composer install --ignore-platform-req=ext-fileinfo // when seeing error with above command`<br>
 
+check laravel version
+`php artisan --version`
+
 # function
 - create user
 - login
