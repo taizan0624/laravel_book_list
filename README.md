@@ -17,6 +17,13 @@
 - php artisan migrate
 - If seeing `Illuminate\Database\QueryException could not find driver error` -> Remove comment out of `extension=pdo_mysql` on php.ini(C:\Program Files\php-8.1.0-Win32-vs16-x64)
 
+5. user authentication set up
+`composer require laravel/breeze:1.9.2`
+`php artisan breeze:install`
+`npm install`
+`npm run dev` -> In case of error, update node version. Just intall latest (https://nodejs.org/ja/), check by node -v
+`php artisan migrate`
+
 check laravel version
 `php artisan --version`
 
