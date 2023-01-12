@@ -38,15 +38,12 @@ check laravel version
 update node.js to latest (https://nodejs.org/ja/)
 
 # function
-- create user
-- login
+- create user (DONE)
+- login (DONE)
 - view user book list
 - add book
+  - call rakuten books api
 - delete book
 - follow user
 - unfollow user
-- logout
-
-# todo
-- mysql とつなぐ
-- rakuten books api を呼ぶ
+- logout (DONE)
