@@ -5,6 +5,7 @@
 `% composer create-project laravel/laravel example-app`<br>
 `% cd example-app`<br>
 `% php artisan serve // run development server`<br>
+`% php artisan key:generate`
 `% composer install --ignore-platform-req=ext-fileinfo // when seeing error with above command`<br>
 
 # function
