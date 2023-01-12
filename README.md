@@ -18,7 +18,15 @@
 - If seeing `Illuminate\Database\QueryException could not find driver error` -> Remove comment out of `extension=pdo_mysql` on php.ini(C:\Program Files\php-8.1.0-Win32-vs16-x64)
 
 5. user authentication set up
-`composer require laravel/breeze:1.9.2`
+`composer require laravel/breeze --dev
+Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - league/mime-type-detection 1.11.0 requires ext-fileinfo * -> it is missing from your system. Install or enable PHP's fileinfo extension.
+    - laravel/framework v9.47.0 requires league/flysystem ^3.8.0 -> satisfiable by league/flysystem[3.12.1].
+    - league/flysystem 3.12.1 requires league/mime-type-detection ^1.0.0 -> satisfiable by league/mime-type-detection[1.11.0].
+    - laravel/framework is locked to version v9.47.0 and an update of this package was not requested.
+edit php.ini extension=fileinfo, extension=gd
 `php artisan breeze:install`
 `npm install`
 `npm run dev` -> In case of error, update node version. Just intall latest (https://nodejs.org/ja/), check by node -v
