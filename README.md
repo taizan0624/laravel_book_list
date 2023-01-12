@@ -9,9 +9,13 @@
 `% composer install --ignore-platform-req=ext-fileinfo // when seeing error with above command`<br>
 
 3. Install MySQL to local
-ref. https://prog-8.com/docs/mysql-env-win
-Add C:\Program Files\MySQL\MySQL Server 8.0\bin to environment variable
+- Install using installer ref. https://prog-8.com/docs/mysql-env-win
+- Add C:\Program Files\MySQL\MySQL Server 8.0\bin to environment variable
 
+4. Execute migration (laravel will create tables on local MySQL)
+- Edit .env, update DB_DATABASE and DB_PASSWORD
+- php artisan migrate
+- If seeing `Illuminate\Database\QueryException could not find driver error` -> Remove comment out of `extension=pdo_mysql` on php.ini(C:\Program Files\php-8.1.0-Win32-vs16-x64)
 
 check laravel version
 `php artisan --version`
